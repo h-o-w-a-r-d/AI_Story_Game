@@ -21,8 +21,7 @@ An interactive text adventure game powered by AI, allowing players to create the
 ## 🎮 Gameplay Tips
 
 *   **Character Description Tips**: The more detailed your description, the more the AI-generated story will align with your imagination. Including background, personality, and goals will yield better results.
-*   **Regenerate Function**: Not satisfied with the AI's response? Click the "Regenerate Answer" button, and the AI will provide a different story development.
-*   **Custom Actions**: Not limited to default options! Enter any action you want to perform, and the AI will instantly respond and generate the plot.
+*   **Custom Actions**: Enter any action you want to perform, and the AI will instantly respond and generate the plot.
 *   **Save System**: Supports both browser saving and file download, allowing you to save your adventure progress at any time.
 
 ## ❓ Frequently Asked Questions
