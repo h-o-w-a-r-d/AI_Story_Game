@@ -1,4 +1,4 @@
-[繁體中文](https://github.com/tntapple219/AI-Story-Game/blob/main/README_zh.md)
+[繁體中文](https://github.com/h-o-w-a-r-d/LLM_Powered_Story_Game/blob/main/README_zh.md)
 # Dynamic Text Adventure Game Powered By LLM
 
 An interactive text adventure game powered by AI, allowing players to create their own characters and embark on unique adventures in various worldviews.
@@ -9,6 +9,7 @@ An interactive text adventure game powered by AI, allowing players to create the
 *   **Supports Multiple AIs**: Supports all OpenAI-compatible APIs, including mainstream models like GPT-4, Claude, and Gemini, allowing you to freely choose the strongest model.
 *   **Local Deployment**: Can be downloaded and run locally, giving you full control over your data and privacy.
 *   **Completely Free**: All features are completely free and open, no registration required, no hidden fees.
+*   **Consistent Scene**: Contextual consistency will not be lost due to the LLM's forgetting.
 
 ## 🚀 Quick Start
 
