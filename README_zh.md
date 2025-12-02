@@ -45,7 +45,7 @@
 
 1.  **克隆儲存庫**：
     ```bash
-    git clone https://github.com/tntapple219/AI-Story-Game.git
+    git clone https://github.com/h-o-w-a-r-d/LLM_Powered_Story_Game.git
     cd AI-Story-Game
     ```
 2.  **打開 `index.html`**：直接在您的網頁瀏覽器中打開 `index.html` 文件即可。
