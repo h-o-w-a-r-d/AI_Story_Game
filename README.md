@@ -5,11 +5,11 @@ An interactive text adventure game powered by AI, allowing players to create the
 
 ## ✨ Features
 
+*   **Consistent Scene**: Contextual consistency will not be lost due to the LLM's forgetting.
 *   **Unlimited Usage**: Play as long as you want, with no usage limits, only consuming your own API quota.
 *   **Supports Multiple AIs**: Supports all OpenAI-compatible APIs, including mainstream models like GPT-4, Claude, and Gemini, allowing you to freely choose the strongest model.
 *   **Local Deployment**: Can be downloaded and run locally, giving you full control over your data and privacy.
 *   **Completely Free**: All features are completely free and open, no registration required, no hidden fees.
-*   **Consistent Scene**: Contextual consistency will not be lost due to the LLM's forgetting.
 
 ## 🚀 Quick Start
 
