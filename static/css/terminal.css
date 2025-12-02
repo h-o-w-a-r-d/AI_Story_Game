@@ -1,0 +1,206 @@
+:root {
+    --bg-color: #0d0d0d;
+    --text-color: #33ff33; /* 經典終端機綠 */
+    --system-color: #00cccc;
+    --user-color: #eeeeee;
+    --narrative-color: #dddddd;
+    --accent-color: #ffcc00;
+    --font-stack: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-stack);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 掃描線特效 */
+.scanline {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2));
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 10;
+    opacity: 0.3;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#status-bar {
+    background: #1a1a1a;
+    border-bottom: 1px solid #333;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+#terminal-output {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    scroll-behavior: smooth;
+}
+
+.message {
+    line-height: 1.6;
+    max-width: 90%;
+    animation: fadeIn 0.3s ease;
+}
+
+.message.ai { color: var(--narrative-color); }
+.message.user { 
+    color: var(--user-color); 
+    align-self: flex-end;
+    background: #1f1f1f;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+.message.system { color: var(--system-color); font-size: 0.9em; font-style: italic; }
+.message.agent { color: #ff99cc; border-left: 3px solid #ff99cc; padding-left: 10px; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#input-area {
+    padding: 20px;
+    background: #111;
+    border-top: 1px solid #333;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.prompt { color: var(--text-color); font-weight: bold; font-size: 1.2em; }
+
+#user-input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--user-color);
+    font-family: var(--font-stack);
+    font-size: 1.1em;
+    outline: none;
+}
+
+#send-btn {
+    background: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#send-btn:hover { background: var(--text-color); color: var(--bg-color); }
+
+/* 除錯地圖 */
+#debug-map-container {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid red;
+    background: black;
+    opacity: 0.8;
+}
+#mapCanvas { width: 100%; height: 100%; image-rendering: pixelated; }
+.hidden { display: none !important; }
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.modal-content {
+    background: #222;
+    padding: 30px;
+    border: 1px solid var(--text-color);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    background: #111;
+    border: 1px solid #444;
+    color: white;
+}
+
+
+#debug-btn {
+    background: transparent;
+    border: 1px solid #ff3333;
+    color: #ff3333;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-right: 5px; /* 與發送按鈕隔開 */
+}
+
+#debug-btn:hover {
+    background: #ff3333;
+    color: #000;
+    box-shadow: 0 0 10px #ff3333;
+}
+
+
+
+/* 上帝視角的表格樣式 */
+.god-mode-grid {
+    font-family: 'Courier New', monospace;
+    background: #111;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.god-cell {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #222;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.god-player { border-color: #33ff33; color: #33ff33; font-weight: bold; }
+.god-trap { color: #ff3333; }
+.god-item { color: #ffff33; }
+.god-empty { color: #444; }
