@@ -1,5 +1,5 @@
 [繁體中文](https://github.com/tntapple219/AI-Story-Game/blob/main/README_zh.md)
-# AI Dynamic Text Adventure Game
+# Dynamic Text Adventure Game Powered By LLM
 
 An interactive text adventure game powered by AI, allowing players to create their own characters and embark on unique adventures in various worldviews.
 
