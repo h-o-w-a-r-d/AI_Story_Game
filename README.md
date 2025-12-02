@@ -5,9 +5,7 @@ An interactive text adventure game powered by AI, allowing players to create the
 
 ## ✨ Features
 
-*   **10 Exquisite Themes**: Choose from various visual styles such as Dark, Cyberpunk, Fantasy, Steampunk, Neon, Nature, Ocean, Sunset, and Galaxy.
 *   **Unlimited Usage**: Play as long as you want, with no usage limits, only consuming your own API quota.
-*   **17 Worldviews**: Rich worlds such as Fantasy, Sci-Fi, Wuxia, Xianxia, Cthulhu Mythos, Palace Intrigue, School Mystery, Alternate History, Romance, Post-Apocalyptic, Cyberpunk, Mystery Detective, Horror, Xuanhuan, Modern Urban, Western Magic, and Transmigration, each with unique status systems.
 *   **Supports Multiple AIs**: Supports all OpenAI-compatible APIs, including mainstream models like GPT-4, Claude, and Gemini, allowing you to freely choose the strongest model.
 *   **Local Deployment**: Can be downloaded and run locally, giving you full control over your data and privacy.
 *   **Completely Free**: All features are completely free and open, no registration required, no hidden fees.
@@ -48,7 +46,7 @@ An interactive text adventure game powered by AI, allowing players to create the
 
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/tntapple219/AI-Story-Game.git
+    git clone https://github.com/h-o-w-a-r-d/LLM_Powered_Story_Game.git
     cd AI-Story-Game
     ```
 2.  **Open `index.html`**: Simply open the `index.html` file in your web browser.
