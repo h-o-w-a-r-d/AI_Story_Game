@@ -2,6 +2,8 @@
 
 一個由 AI 驅動的互動式文字冒險遊戲，讓玩家可以創建自己的角色，並在各種世界觀中展開獨特的冒險。
 
+[線上演示](https://h-o-w-a-r-d.github.io/LLM_Powered_Story_Game/pages/index.html)
+
 ## ✨ 特色功能
 
 *   **場景的一致性**: 場景一致性不會因 LLM 的遺忘而喪失。
