@@ -3,6 +3,8 @@
 
 An interactive text adventure game powered by AI, allowing players to create their own characters and embark on unique adventures in various worldviews.
 
+[Online_DEMO](https://h-o-w-a-r-d.github.io/LLM_Powered_Story_Game/pages/index.html)
+
 ## ✨ Features
 
 *   **Consistent Scene**: Contextual consistency will not be lost due to the LLM's forgetting.
